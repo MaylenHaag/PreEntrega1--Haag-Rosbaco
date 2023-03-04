@@ -26,11 +26,6 @@ function persona() {
 }
 
 
-if (edad < 10 || edad > 85) {
-  alert("Usted no puede participar porque no cumple con la edad requerida.");
-}
-
-
 while (sexoconf === false) {
   if (sexo === "femenino" || sexo === "Femenino" || sexo === "FEMENINO") {
     sexoconf = 1;
@@ -91,7 +86,6 @@ switch (km) {
                     categoria = "CICLO DAMAS E";
         
                 }
-                break;
 
             case 2:
         
@@ -114,12 +108,11 @@ switch (km) {
                     categoria = "CICLOTURISMO E";
         
                 }
-                break;
 
-            default: alert("Usted no puede participar porque no cumple con la edad requerida.");
+            //default: categoria = "Usted no puede participar porque no cumple con la edad requerida.";
                 break;
         }
-        break;
+        
 
     case 65:
     
@@ -145,7 +138,6 @@ switch (km) {
                 } else if (edad >= 66) {
                     categoria = "DAMAS E";
                 }
-                break;
 
             case 2:
         
@@ -167,12 +159,11 @@ switch (km) {
                 } else if (edad >= 66) {
                     categoria = "MASTER E";
                 }
-                break;
 
-            default: alert("Usted no puede participar porque no cumple con la edad requerida.");
+            //default: categoria = "Usted no puede participar porque no cumple con la edad requerida.";
                 break;
         }
-        break;
+        
 
     case 95:
     
@@ -196,7 +187,6 @@ switch (km) {
                     categoria = "DAMAS D";
             
                 }
-                break;
 
             case 2:
         
@@ -234,10 +224,17 @@ switch (km) {
                     categoria = "MASTER E";
             
                 }
-                break;
-            default: alert("Usted no puede participar porque no cumple con la edad requerida.");
+            //default: categoria = "Usted no puede participar porque no cumple con la edad requerida.";
                 break;
         }        
 }
 
 
+if (edad < 10 || edad > 85) {
+
+    alert("Usted no puede participar porque no cumple con la edad requerida.");
+  
+} else {
+  
+    alert('Gracias! Participas en la categoria: ' + categoria);
+}
