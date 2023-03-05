@@ -29,11 +29,7 @@ function persona() {
 while (sexoconf === false) {
   if (sexo === "femenino" || sexo === "Femenino" || sexo === "FEMENINO") {
     sexoconf = 1;
-  } else if (
-    sexo === "masculino" ||
-    sexo === "Masculino" ||
-    sexo === "MASCULINO"
-  ) {
+  } else if(sexo === "masculino" || sexo === "Masculino" || sexo === "MASCULINO") {
     sexoconf = 2;
   } else {
     sexo = prompt("Ingrese el sexo nuevamente");
@@ -86,6 +82,7 @@ switch (km) {
                     categoria = "CICLO DAMAS E";
         
                 }
+                break;
 
             case 2:
         
@@ -108,11 +105,9 @@ switch (km) {
                     categoria = "CICLOTURISMO E";
         
                 }
-
-            //default: categoria = "Usted no puede participar porque no cumple con la edad requerida.";
                 break;
         }
-        
+        break;
 
     case 65:
     
@@ -138,6 +133,7 @@ switch (km) {
                 } else if (edad >= 66) {
                     categoria = "DAMAS E";
                 }
+                break;
 
             case 2:
         
@@ -159,11 +155,9 @@ switch (km) {
                 } else if (edad >= 66) {
                     categoria = "MASTER E";
                 }
-
-            //default: categoria = "Usted no puede participar porque no cumple con la edad requerida.";
                 break;
         }
-        
+        break;
 
     case 95:
     
@@ -187,6 +181,7 @@ switch (km) {
                     categoria = "DAMAS D";
             
                 }
+                break;
 
             case 2:
         
@@ -224,9 +219,9 @@ switch (km) {
                     categoria = "MASTER E";
             
                 }
-            //default: categoria = "Usted no puede participar porque no cumple con la edad requerida.";
                 break;
-        }        
+        } 
+        break;       
 }
 
 
